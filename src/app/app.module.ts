@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import {BsDatepickerModule} from 'ngx-bootstrap';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule,
+    FormsModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
